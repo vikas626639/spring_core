@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- classes configuration -->
+	<bean name="dt" class="java.util.Date"/>
+	<bean name="wish" class="com.spring.bean.WishGenerator">
+	<property name="name" value="vikas"/>
+	<property name="date" ref="dt"/>
+	</bean>
+
+
+</beans>
