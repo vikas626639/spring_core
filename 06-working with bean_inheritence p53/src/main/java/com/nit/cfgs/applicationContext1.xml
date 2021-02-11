@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="pulsor1" class="com.nit.bean.Bike" >
+		<property name="id" value="TS081111"></property>
+		<property name="make" value="BAJAJ"></property>
+		<property name="enginCC" value="150"></property>
+	</bean>
+	<bean id="pulsor2" class="com.nit.bean.Bike" parent="pulsor1">
+		<property name="id" value="TS082222"></property>
+	</bean>
+	
+	<!-- here in second property configuration even though we are configure the all properties becouse of parent="xxxxx"
+	remaining propeties inherited -->
+	
+</beans>

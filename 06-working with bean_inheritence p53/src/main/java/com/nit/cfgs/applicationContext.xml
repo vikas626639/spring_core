@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="pulsor1" class="com.nit.bean.Bike">
+		<property name="id" value="TS081111"></property>
+		<property name="make" value="BAJAJ"></property>
+		<property name="enginCC" value="150"></property>
+	</bean>
+	<bean id="pulsor2" class="com.nit.bean.Bike">
+		<property name="id" value="TS081111"></property>
+		<property name="make" value="BAJAJ"></property>
+		<property name="enginCC" value="150"></property>
+	</bean>
+	
+	<!-- here the problem is enginCC property values configuration is not reusable even though they are same 
+	multiple bean configuraton -->
+	
+</beans>
